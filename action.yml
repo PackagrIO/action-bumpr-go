@@ -12,7 +12,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    PACKAGR_VERSION_BUMP_TYPE: ${{ inputs.bumpVersionType }}
+    PACKAGR_VERSION_BUMP_TYPE: ${{ inputs.version_bump_type }}
 branding:
   icon: 'chevrons-up'
   color: 'green'
