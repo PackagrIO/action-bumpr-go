@@ -1,7 +1,7 @@
 name: 'Go Version Bumpr'
 description: 'Github Action that allows you to bump SemVer version for Go repositories'
 inputs:
-  bumpVersionType:  # id of input
+  version_bump_type:  # id of input
     description: 'Bump Version Type (major, minor, patch)'
     required: true
     default: 'patch'
