@@ -7,5 +7,4 @@ Github Action that allows you to bump SemVer version for Go repositories
 
 # Outputs
 
-
 - `release_version`
