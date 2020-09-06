@@ -1,0 +1,15 @@
+name: 'Go Version Bumpr'
+description: 'Github Action that allows you to bump SemVer version for Go repositories'
+inputs:
+  bumpVersionType:  # id of input
+    description: 'Bump Version Type (major, minor, patch)'
+    required: true
+    default: 'patch'
+outputs:
+  version: # id of output
+    description: 'Version that was written to files'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    PACKAGR_VERSION_BUMP_TYPE: ${{ inputs.bumpVersionType }}
