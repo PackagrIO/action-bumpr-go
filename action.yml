@@ -9,6 +9,10 @@ inputs:
     description: 'Path to file containing Version string'
     required: true
     default: 'pkg/version/version.go'
+  cwd:
+    description: 'Working Directory'
+    required: false
+    default: ''
 outputs:
   version: # id of output
     description: 'Version that was written to files'
@@ -18,6 +22,7 @@ runs:
   env:
     PACKAGR_VERSION_BUMP_TYPE: ${{ inputs.version_bump_type }}
     PACKAGR_VERSION_METADATA_PATH: ${{ inputs.version_metadata_path }}
+    CUSTOM_WORKING_DIRECTORY: ${{ inputs.cwd }}
 branding:
   icon: 'chevrons-up'
   color: 'green'
