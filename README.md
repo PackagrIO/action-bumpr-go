@@ -28,8 +28,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     container: golang
-    env:
-      PROJECT_PATH: /go/src/github.com/AnalogJ/golang_analogj_test
     steps:
       - name: Checkout
         uses: actions/checkout@v2
